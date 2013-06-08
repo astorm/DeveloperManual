@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Alanstormdotcom_Developermanual>
+			<version>1.1.2</version>
+		</Alanstormdotcom_Developermanual>
+	</modules>
+	
+	<admin>
+		<routers>
+		    <adminhtml>
+		        <args>
+		            <modules>
+    		            <alanstormdotcom_developermanual before="Mage_Adminhtml">Alanstormdotcom_Developermanual</alanstormdotcom_developermanual>
+		            </modules>
+		        </args>
+		    </adminhtml>
+			<alanstormdotcom_developermanual>
+				<use>admin</use>
+				<args>
+					<module>Alanstormdotcom_Developermanual</module>
+					<frontName>developermanual</frontName>
+				</args>
+			</alanstormdotcom_developermanual>
+		</routers>
+	</admin>
+	
+	
+	<frontend>
+		<routers>
+			<alanstormdotcom_developermanual>
+				<use>standard</use>
+				<args>
+					<module>Alanstormdotcom_Developermanual</module>
+					<frontName>alanstormdotcom_developermanual</frontName>
+				</args>
+			</alanstormdotcom_developermanual>
+		</routers>
+	</frontend>
+	<global>
+		<blocks>
+			<alanstormdotcom_developermanual>
+				<class>Alanstormdotcom_Developermanual_Block</class>
+			</alanstormdotcom_developermanual>
+		</blocks>
+		<models>
+			<alanstormdotcom_developermanual>
+				<class>Alanstormdotcom_Developermanual_Model</class>
+			</alanstormdotcom_developermanual>
+		</models>
+		<helpers>
+			<alanstormdotcom_developermanual>
+				<class>Alanstormdotcom_Developermanual_Helper</class>
+			</alanstormdotcom_developermanual>
+		</helpers>
+	</global>
+</config>

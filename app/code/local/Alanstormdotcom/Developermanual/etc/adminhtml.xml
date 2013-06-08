@@ -1,0 +1,34 @@
+<config>
+    <menu>
+        <developermanual translate="title" module="alanstormdotcom_developermanual">
+            <title>Developer Manual</title> 
+            <sort_order>9999</sort_order>
+            <children>
+                <block_actions module="alanstormdotcom_developermanual">
+                    <title>Block Actions</title> 
+                    <!-- <action>adminhtml/alanstormdotcom_developermanual/blockLayoutactionsReference</action> -->
+                    <action>adminhtml/alanstormdotcom_developermanual_index/blockLayoutactionsReference</action>
+                    <!-- <action>developermanual/index/blockLayoutactionsReference</action> -->
+                </block_actions>
+        
+                <helper_actions module="alanstormdotcom_developermanual">
+                    <title>Helper Methods</title> 
+                    <action>adminhtml/alanstormdotcom_developermanual_helper/helperReference</action>
+                    <!-- <action>adminhtml/alanstormdotcom_developermanual/helperReference</action> -->
+                    <!-- <action>developermanual/helper/helperReference</action> -->
+                </helper_actions>
+
+                <magento_api module="alanstormdotcom_developermanual">
+                    <title>Magento API</title> 
+                    <action>adminhtml/alanstormdotcom_developermanual_api/reference</action>
+                </magento_api>                   
+                
+                <about module="alanstormdotcom_developermanual">
+                    <title>About</title> 
+                    <action>adminhtml/alanstormdotcom_developermanual_index/about</action>
+                    <!-- <action>developermanual/index/about</action> -->
+                </about>                    
+            </children>
+        </developermanual>
+    </menu> 
+</config>

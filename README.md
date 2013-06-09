@@ -7,7 +7,7 @@ A Magento module for browsing block action methods, PHP Doc blocks, and more!
 
 The Developer Manual extension allows you to, in real time, query your system for which action methods are available via a particular block tag.  Additional reference materials are planned. 
 
-Original Post: http://alanstorm.com/magento_action_layout_reference
+Original Blog Post: http://alanstorm.com/magento_action_layout_reference
 
 ###Build Instructions
 

@@ -13,8 +13,10 @@ class Alanstormdotcom_Developermanual_Model_Reflector_Helper extends Mage_Core_M
 		
 		$path = $args[0];
 		$this->_className = $args[1];
-		
-		require_once($path);
+		if(!class_exists($this->_className, false))
+		{
+		    require_once($path);
+		}
 		$this->_reflector = new ReflectionClass($this->_className);
 	}
 	
